@@ -51,8 +51,7 @@ const DesktopMenu = ({location: {pathname}, token, cartCount, signout}) => {
           </Menu.Menu>
         ) : (
           <Menu.Menu position="right">
-            <Menu.Menu position="right">
-              <Menu.Item
+            <Menu.Item
                 as={Link}
                 to="/Products/"
                 active={activeItem === withPrefix('/Products/')}
