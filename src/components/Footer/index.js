@@ -50,7 +50,7 @@ const Footer = () => (
             </List>
           </Grid.Column>
           <Grid.Column width={7}>
-            <Header as="h4">Footer Header</Header>
+            <Header as="h4">More Info</Header>
             <p>
               Extra space for a call to action inside the footer that could help
               re-engage users.
