@@ -1,16 +1,12 @@
 import React from 'react'
-import {graphql, useStaticQuery} from 'gatsby'
 import get from 'lodash/get'
 import {Image, Header} from 'semantic-ui-react'
-import ProductList from '../components/ProductList'
 import SEO from '../components/SEO'
 import logo from '../images/ill-short-dark.svg'
 import Layout from '../components/Layout'
 
   const siteTitle = get(data, 'site.siteMetadata.title')
-  const products = get(data, 'allMoltinProduct.edges')
-  const filterProductsWithoutImages = products.filter(v => v.node.mainImageHref)
-  return (
+  const Home = ({location}) => (
     <Layout location={location}>
       <SEO title={siteTitle} />
       <Header
@@ -32,7 +28,6 @@ import Layout from '../components/Layout'
       </Header>
       Test Body
     </Layout>
-  )
-}
-
+)
+    
 export default StoreIndex
