@@ -23,15 +23,15 @@ const DesktopMenu = ({location: {pathname}, token, cartCount, signout}) => {
           <Logo />
           Starter Store
         </Menu.Item>
-        <Menu.Item
-              as={Link}
-              to="/Products/"
-              active={activeItem === withPrefix('/Products/')}
-              Products
-        >
-        </Menu.Item>
         {token ? (
           <Menu.Menu position="right">
+            <Menu.Item
+                as={Link}
+                to="/Products/"
+               active={activeItem === withPrefix('/Products/')}
+              >
+              Products
+            </Menu.Item>
             <Menu.Item
               as={Link}
               to="/myaccount/"
@@ -51,6 +51,14 @@ const DesktopMenu = ({location: {pathname}, token, cartCount, signout}) => {
           </Menu.Menu>
         ) : (
           <Menu.Menu position="right">
+            <Menu.Menu position="right">
+              <Menu.Item
+                as={Link}
+                to="/Products/"
+                active={activeItem === withPrefix('/Products/')}
+              >
+              Products
+            </Menu.Item>
             <Menu.Item
               as={Link}
               to="/register/"
