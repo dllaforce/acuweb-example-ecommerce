@@ -23,8 +23,8 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: install cms
-      run: npm install netlify-cms-app
+    - name: fund
+      run: npm fund
 
     - name: install plugin
-      run: npm install gatsby-plugin-netlify-cms
+      run: npm audit fix
