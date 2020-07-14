@@ -24,4 +24,4 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: install plugin
-      run: npm install --save netlify-cms-app gatsby-plugin-netlify-cms
+      run: npm audit fix
