@@ -3,7 +3,7 @@ import Headroom from 'react-headroom'
 import {Container} from 'semantic-ui-react'
 import Footer from '../Footer'
 import Header from '../Header'
-import 'layout.css'
+import './layout.css'
 import 'semantic-ui-css/semantic.min.css'
 
 const Layout = ({location, children}) => (
